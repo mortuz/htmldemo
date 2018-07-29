@@ -18,9 +18,9 @@
             max-width: 100%;
         }
 
-        .section{
+        /* .section{
             padding: 80px 0px;
-        }
+        } */
 
         .section1{
             background-color: #f4f4f4;
@@ -59,6 +59,11 @@
             width: 180px;
         }
 
+        .top-logo{
+            width: 180px;
+            /* float:right; */
+        }
+
         .section {
             min-height: 100vh;
         }
@@ -71,15 +76,64 @@
             position: absolute;
             top: 40%;
         }
+
+        .header{
+           color:#535353; 
+        }
+
+        .bg-nav1{
+            background-color: transparent;
+        }
+
+        .vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
     </style>
 
     <title>Integration Hub</title>
 </head>
 
 <body>
-    <!-- <div class="nav"></div> -->
-    <header></header>
-    <section class="section section1" id="section1">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav1 border-bottom">
+        <div class="container">
+
+            <a class="navbar-brand font-weight-bold" href="#">Integration Hub</a>
+            
+                <span class="navbar-text font-weight-bold">
+                     Tech DOT
+                </span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- <header class="section header position-relative">
+        <div class="jumbotron bg-white">
+            <div class="container">
+                <h1 class="display-4">Integration Hub</h1>
+                <p class="lead font-weight-bold">Tech DOT</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="position-absolute clearfix font-weight-bold">
+                    <div class="float-left">www.tdot.uk
+                        <br> 114 Whitechapel High St,
+                        <br> London
+                        <br> E1 7PT</div>
+                    <div class="float-right">
+                        <img src="./logo.png" class="top-logo" alt="">
+                    </div>
+            </div>
+            
+        </div>
+    </header> -->
+
+    <section class="section section1 vertical-center" id="section1">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 order-md-2">
@@ -107,7 +161,7 @@
     </section>
 
 
-    <section class="section section2" id="section2">
+    <section class="section section2 vertical-center" id="section2">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 order-md-2">
@@ -128,7 +182,7 @@
     </section>
 
 
-    <section class="section section3" id="section3">
+    <section class="section section3 vertical-center" id="section3">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 order-md-2">
@@ -149,7 +203,7 @@
     </section>
 
 
-    <section class="section section4" id="section4">
+    <section class="section section4 vertical-center" id="section4">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 order-md-2">
@@ -174,7 +228,7 @@
     </section>
 
 
-    <section class="section section5" id="section5">
+    <section class="section section5 vertical-center" id="section5">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 order-md-2">
